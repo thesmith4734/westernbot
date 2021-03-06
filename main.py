@@ -3,6 +3,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 
 intents = discord.Intents.default()
+intents.members = True
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"), intents=intents, description='Permission Regulation Bot')
 
